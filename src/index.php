@@ -18,9 +18,11 @@ try {
 	$controller = new $url_controller();
 } catch (Exception $e) {
 	if (empty ($url_controller))
-		$controller = new main_page ();
-	else
-		header ('Location: /');
+		$controller = new main ();
+	else {
+		header ('Location: /main');
+		die ();
+	}
 }
 
 $controller->draw ();

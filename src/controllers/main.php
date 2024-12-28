@@ -3,7 +3,7 @@
 require_once 'models/model_modules.php';
 require_once 'models/model_main_page.php';
 
-class main_page extends page {
+class main extends page {
 
 	public function __construct () {
 
