@@ -22,7 +22,7 @@ class model_ftp extends model {
 			        die ("Not login");
 			}
 			header ('Content-Type: ' . 'application/octet-stream');
-			header ('Content-Disposition: ' . "attachment; filename='" . $_POST['filename'] . "';");
+			header ('Content-Disposition: ' . "attachment; filename=" . $_POST['filename'] . ";");
 			$fp = fopen('php://output', 'w+');
 			stream_set_write_buffer($fp, 0);
 
